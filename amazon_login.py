@@ -26,7 +26,9 @@ driver.find_element(By.XPATH, "//a[contains(text(),'Other issues with Sign-In')]
 driver.find_element(By.ID, "createAccountSubmit")
 
 
+
 print("Test Case Passed: All elements were found successfully.")
 driver.quit()
+
 
 

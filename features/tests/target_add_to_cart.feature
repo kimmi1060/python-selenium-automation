@@ -1,6 +1,6 @@
-# Created by kkdad at 9/16/2024
-Feature: # Enter feature name here
-  # Enter feature description here
+Feature: Add product to cart
 
-  Scenario: # Enter scenario name here
-    # Enter steps here
+  Scenario: Add a product to the cart
+    Given I am on the Target homepage
+    When I add "laptop" to the cart
+    Then the cart should contain the product

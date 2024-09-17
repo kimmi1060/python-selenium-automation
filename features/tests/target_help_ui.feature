@@ -1,6 +1,10 @@
-# Created by kkdad at 9/16/2024
-Feature: # Enter feature name here
-  # Enter feature description here
+Feature: Target Help UI Verification
 
-  Scenario: # Enter scenario name here
-    # Enter steps here
+  Scenario: Verify UI elements on Target Help page
+    Given I am on the Target Help page
+    Then I should see the following UI elements:
+      | element      |
+      | search_box   |
+      | help_topics  |
+      | contact_link |
+#

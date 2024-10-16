@@ -1,13 +1,12 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
 from behave import given, when, then
 
-@given('I open the Target homepage')
-def step_open_target_homepage(context):
-    context.driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
-    context.driver.get("https://www.target.com")
+# Open Target Sign-In Page
+webdriver.find_element('https://www.target.com/login')
 
 @when('I click on the Sign In button')
 def step_click_sign_in_button(context):

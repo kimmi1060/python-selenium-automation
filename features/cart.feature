@@ -1,6 +1,8 @@
-# Created by kkdad at 9/30/2024
-Feature: # Enter feature name here
-  # Enter feature description here
+Feature: Add a product to cart
 
-  Scenario: # Enter scenario name here
-    # Enter steps here
+  Scenario: Add a product to the cart
+    Given Open target main page
+    When Search for "AirPods"
+    And Add the product to cart
+    And Click on Cart icon
+    Then Verify product is in the cart

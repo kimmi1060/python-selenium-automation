@@ -10,7 +10,8 @@ def open_main(context):
 
 
 @when('Click on cart icon')
-@@ -15,12 +14,7 @@ def click_cart(context):
+def click_cart(context):
+    context.driver.find_element(By.CSS_SELECTOR, "[data-test='@web/CartLink']").click()
 
 @when('Search for {item}')
 def search_product(context, item):

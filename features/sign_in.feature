@@ -1,6 +1,7 @@
-# Created by kkdad at 9/30/2024
-Feature: # Enter feature name here
-  # Enter feature description here
+Feature: Verify Sign In functionality
 
-  Scenario: # Enter scenario name here
-    # Enter steps here
+  Scenario: Verify logged-out user can access Sign In
+    Given Open target main page
+    When Click Sign In from header
+    And From right-side navigation menu, click Sign In
+    Then Verify Sign In form opened
